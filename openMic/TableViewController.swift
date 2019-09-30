@@ -59,7 +59,7 @@ class TableViewController: UITableViewController {
         let hitPoint = sender.convert(CGPoint.zero, to: self.tableView)
         let hitIndex = self.tableView.indexPathForRow(at: hitPoint)
         
-        NSLog("Top Index Path \(hitIndex?.row)")
+        NSLog("Top Index Path \(String(describing: hitIndex?.row))")
         
     }
     /*
