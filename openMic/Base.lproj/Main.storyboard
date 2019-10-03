@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,11 +75,58 @@
                             <outlet property="delegate" destination="2Xy-Xj-Ggi" id="FNd-sn-981"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="a2h-a2-ph8"/>
+                    <navigationItem key="navigationItem" id="a2h-a2-ph8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="57J-R7-kec">
+                            <connections>
+                                <segue destination="HJE-Nb-FCI" kind="presentation" id="nnn-hp-nxm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkY-Uq-672" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="745.98214285714278"/>
+        </scene>
+        <!--Post View Controller-->
+        <scene sceneID="pYB-1n-8Mu">
+            <objects>
+                <viewController id="qC5-wV-qzi" customClass="PostViewController" customModule="openMic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jHM-fX-ygt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Compose a post" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-b2-1cN">
+                                <rect key="frame" x="20" y="56" width="374" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VGy-hs-CPM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7dd-Zd-HUW">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="s6I-k4-UFb">
+                            <connections>
+                                <action selector="cancelPressed:" destination="qC5-wV-qzi" id="8Un-Qp-Dr3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="7l9-o9-wRa">
+                            <connections>
+                                <action selector="postPressed:" destination="qC5-wV-qzi" id="Juc-6Q-lwR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="postView" destination="pQn-b2-1cN" id="CE6-ef-5Y7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qU3-wA-w0M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2762.3188405797105" y="746.65178571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sTy-EK-dUq">
@@ -97,6 +145,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huK-Rg-r1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134.78260869565219" y="745.98214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kNG-pS-JUU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HJE-Nb-FCI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Ba-ww-3kh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qC5-wV-qzi" kind="relationship" relationship="rootViewController" id="LLQ-Sp-dXE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InR-mt-uLE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.6231884057972" y="746.65178571428567"/>
         </scene>
     </scenes>
     <resources>
