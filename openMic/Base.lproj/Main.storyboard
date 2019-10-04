@@ -60,9 +60,17 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTJ-JA-XV2">
+                                            <rect key="frame" x="87" y="89" width="240" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                            </accessibility>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cellImage" destination="sTJ-JA-XV2" id="43R-WH-tJS"/>
                                     <outlet property="cellLabel" destination="hQ2-Df-Dpv" id="qdH-af-XRR"/>
                                     <outlet property="numLikes" destination="rCG-GL-pug" id="NuZ-jW-0T4"/>
                                     <outlet property="numReplies" destination="bZ3-cx-0LE" id="e1h-ay-ulj"/>
@@ -95,7 +103,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Compose a post" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-b2-1cN">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Compose a Post" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-b2-1cN">
                                 <rect key="frame" x="20" y="56" width="374" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -104,6 +112,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jHS-It-583">
+                                <rect key="frame" x="87" y="192" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meY-Wr-gGD">
+                                <rect key="frame" x="160" y="328" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add an image"/>
+                                <connections>
+                                    <action selector="imageAdd:" destination="qC5-wV-qzi" eventType="touchUpInside" id="eF0-WK-PMf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VGy-hs-CPM"/>
@@ -121,6 +141,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addImageButton" destination="meY-Wr-gGD" id="0kI-8G-DqV"/>
+                        <outlet property="postImage" destination="jHS-It-583" id="WFH-cq-eIc"/>
                         <outlet property="postView" destination="pQn-b2-1cN" id="CE6-ef-5Y7"/>
                     </connections>
                 </viewController>

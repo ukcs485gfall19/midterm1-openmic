@@ -9,9 +9,12 @@
 import UIKit
 import Parse
 
-class PostViewController: UIViewController, UITextViewDelegate {
+class PostViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var postView: UITextView!
+    @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var addImageButton: UIButton!
+    let imagePicker = UIImagePickerController()
     var reset:Bool = false
 
     override func viewDidLoad() {
@@ -19,10 +22,39 @@ class PostViewController: UIViewController, UITextViewDelegate {
         self.postView.selectedRange = NSMakeRange(0, 0)
         self.postView.delegate = self
         self.postView.becomeFirstResponder()
+        imagePicker.delegate = self
+        if (postImage.image == nil) {
+            postImage.isHidden = true
+            addImageButton.isHidden = false
+        } else {
+            postImage.isHidden = false
+            addImageButton.isHidden = true
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func imageAdd(_ sender: Any) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            postImage.contentMode = .scaleAspectFit
+            postImage.image = pickedImage
+            postImage.isHidden = false
+            addImageButton.isHidden = true
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
