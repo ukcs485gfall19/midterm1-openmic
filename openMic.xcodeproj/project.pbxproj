@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		1B8E78768EDD8A4FDDC63FBB /* Pods-openMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openMic.release.xcconfig"; path = "Target Support Files/Pods-openMic/Pods-openMic.release.xcconfig"; sourceTree = "<group>"; };
+		3A482E2F234785A600008CF1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A492733234275CF0083614A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		3AF454B5234512ED00A113F3 /* openMic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "openMic-Bridging-Header.h"; sourceTree = "<group>"; };
 		3AFEFD4B232ABA2800C026D1 /* openMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +51,7 @@
 		3AFEFD42232ABA2800C026D1 = {
 			isa = PBXGroup;
 			children = (
+				3A482E2F234785A600008CF1 /* README.md */,
 				3AFEFD4D232ABA2800C026D1 /* openMic */,
 				3AFEFD4C232ABA2800C026D1 /* Products */,
 				675E37314C4428033E4BF7E6 /* Pods */,
