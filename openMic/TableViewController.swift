@@ -7,11 +7,25 @@
 //
 
 import UIKit
+import Parse
 
-class TableViewController: UITableViewController {
+class TableViewController: PFQueryTableViewController {
     
     let sampleCells = ["This is the first cell that I came up with", "The second cell is this one", "This cell has an index of 2", "Last Cell"]
 
+    override init(style: UITableView.Style, className: String!) {
+        super.init(style: style, className: className)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+        
+        self.parseClassName = "openMic"
+        self.textKey = "text"
+        self.pullToRefreshEnabled = true
+        self.objectsPerPage = 200
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +39,24 @@ class TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    /*override func didReceiveMemoryWarning() {
+        super.didRecieveMemoryWarning()
+    }*/
+    
+    override func queryForTable() -> PFQuery<PFObject> {
+        let query = PFQuery(className: "openMic")
+        query.limit = 200;
+        query.order(byDescending: "createdAt")
+        return query
+    }
+    
+    func objectAtIndexPath(indexPath: NSIndexPath!) -> PFObject! {
+        var obj: PFObject? = nil
+        if(indexPath.row < self.objects!.count) {
+            obj = self.objects![indexPath.row] as PFObject
+        }
+        return obj
+    }
     // MARK: - Table view data source
     
     //This function assigns the number of sections in the table view
@@ -34,16 +66,16 @@ class TableViewController: UITableViewController {
     }
 
     //This funtion determines how many cells will be shown in each section
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.sampleCells.count;
-    }
+//        return self.sampleCells.count;
+//    }
 
     //Function configures the labels within the cells
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: NSIndexPath!, object: PFObject!) -> PFTableViewCell! {
         //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         //Assigns the variable 'cell' to a 'TableViewCell' object
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as! TableViewCell
         
         cell.cellLabel.text = sampleCells[indexPath.row]
         cell.postTime.text = "\((indexPath.row + 1) * 3)m ago"

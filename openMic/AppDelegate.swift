@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
                window?.makeKeyAndVisible()
                window?.rootViewController = ViewController()
+        let parseConfig = ParseClientConfiguration {
+            $0.applicationId = "openMicParse"
+            $0.clientKey = "parseClientKey"
+            $0.server = "http://localhost:1337/parse"
+        }
+        Parse.initialize(with: parseConfig)
+        
         return true
     }
 
