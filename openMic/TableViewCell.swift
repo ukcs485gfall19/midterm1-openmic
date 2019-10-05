@@ -22,8 +22,15 @@ class TableViewCell: PFTableViewCell {
     
     @IBOutlet weak var numLikes: UILabel!
     
+    @IBOutlet weak var cellImage: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        if (cellImage.image == nil) {
+            cellImage.isHidden = true
+        } else {
+            cellImage.isHidden = false
+        }
         // Initialization code
     }
 
