@@ -117,7 +117,6 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="a2h-a2-ph8"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationItem key="navigationItem" id="a2h-a2-ph8">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="57J-R7-kec">
@@ -240,6 +239,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWz-Yi-jGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3041" y="746"/>
+        </scene>
         <!--Post View Controller-->
         <scene sceneID="pYB-1n-8Mu">
             <objects>
