@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A492734234275CF0083614A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A492733234275CF0083614A /* PostViewController.swift */; };
 		3AFEFD4F232ABA2800C026D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFEFD4E232ABA2800C026D1 /* AppDelegate.swift */; };
 		3AFEFD51232ABA2800C026D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFEFD50232ABA2800C026D1 /* ViewController.swift */; };
 		3AFEFD54232ABA2800C026D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFEFD52232ABA2800C026D1 /* Main.storyboard */; };
@@ -14,9 +15,14 @@
 		3AFEFD59232ABA2900C026D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFEFD57232ABA2900C026D1 /* LaunchScreen.storyboard */; };
 		843316232341485800E6A66D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843316222341485800E6A66D /* TableViewController.swift */; };
 		843316252341487000E6A66D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843316242341487000E6A66D /* TableViewCell.swift */; };
+		991CEAF8D1ED8BB0B3639601 /* Pods_openMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A05E7738A6A4FCA3201F8C9 /* Pods_openMic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B8E78768EDD8A4FDDC63FBB /* Pods-openMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openMic.release.xcconfig"; path = "Target Support Files/Pods-openMic/Pods-openMic.release.xcconfig"; sourceTree = "<group>"; };
+		3A482E2F234785A600008CF1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A492733234275CF0083614A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		3AF454B5234512ED00A113F3 /* openMic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "openMic-Bridging-Header.h"; sourceTree = "<group>"; };
 		3AFEFD4B232ABA2800C026D1 /* openMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFEFD4E232ABA2800C026D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AFEFD50232ABA2800C026D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +30,10 @@
 		3AFEFD55232ABA2900C026D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AFEFD58232ABA2900C026D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AFEFD5A232ABA2900C026D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A05E7738A6A4FCA3201F8C9 /* Pods_openMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		843316222341485800E6A66D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		843316242341487000E6A66D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		85B34AB5C8DAB3C526B3A8FF /* Pods-openMic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openMic.debug.xcconfig"; path = "Target Support Files/Pods-openMic/Pods-openMic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991CEAF8D1ED8BB0B3639601 /* Pods_openMic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +51,11 @@
 		3AFEFD42232ABA2800C026D1 = {
 			isa = PBXGroup;
 			children = (
+				3A482E2F234785A600008CF1 /* README.md */,
 				3AFEFD4D232ABA2800C026D1 /* openMic */,
 				3AFEFD4C232ABA2800C026D1 /* Products */,
+				675E37314C4428033E4BF7E6 /* Pods */,
+				454F01A224C0183E6C9293F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +78,27 @@
 				3AFEFD55232ABA2900C026D1 /* Assets.xcassets */,
 				3AFEFD57232ABA2900C026D1 /* LaunchScreen.storyboard */,
 				3AFEFD5A232ABA2900C026D1 /* Info.plist */,
+				3A492733234275CF0083614A /* PostViewController.swift */,
+				3AF454B5234512ED00A113F3 /* openMic-Bridging-Header.h */,
 			);
 			path = openMic;
+			sourceTree = "<group>";
+		};
+		454F01A224C0183E6C9293F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A05E7738A6A4FCA3201F8C9 /* Pods_openMic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		675E37314C4428033E4BF7E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85B34AB5C8DAB3C526B3A8FF /* Pods-openMic.debug.xcconfig */,
+				1B8E78768EDD8A4FDDC63FBB /* Pods-openMic.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AFEFD5D232ABA2900C026D1 /* Build configuration list for PBXNativeTarget "openMic" */;
 			buildPhases = (
+				830572AADFC57FA1BBFB5222 /* [CP] Check Pods Manifest.lock */,
 				3AFEFD47232ABA2800C026D1 /* Sources */,
 				3AFEFD48232ABA2800C026D1 /* Frameworks */,
 				3AFEFD49232ABA2800C026D1 /* Resources */,
+				497434D1F8DE3AACBB4D5A4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +169,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		497434D1F8DE3AACBB4D5A4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-openMic/Pods-openMic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-openMic/Pods-openMic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-openMic/Pods-openMic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		830572AADFC57FA1BBFB5222 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-openMic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AFEFD47232ABA2800C026D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -145,6 +220,7 @@
 				843316252341487000E6A66D /* TableViewCell.swift in Sources */,
 				843316232341485800E6A66D /* TableViewController.swift in Sources */,
 				3AFEFD4F232ABA2800C026D1 /* AppDelegate.swift in Sources */,
+				3A492734234275CF0083614A /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +364,7 @@
 		};
 		3AFEFD5E232ABA2900C026D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B34AB5C8DAB3C526B3A8FF /* Pods-openMic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +382,7 @@
 		};
 		3AFEFD5F232ABA2900C026D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8E78768EDD8A4FDDC63FBB /* Pods-openMic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

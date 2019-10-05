@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Parse
 
-class TableViewCell: UITableViewCell {
+class TableViewCell: PFTableViewCell {
 
     //@IBOutlet weak var cellLabel: UILabel!
     
