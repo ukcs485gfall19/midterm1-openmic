@@ -14,6 +14,8 @@
 		3AFEFD59232ABA2900C026D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFEFD57232ABA2900C026D1 /* LaunchScreen.storyboard */; };
 		843316232341485800E6A66D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843316222341485800E6A66D /* TableViewController.swift */; };
 		843316252341487000E6A66D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843316242341487000E6A66D /* TableViewCell.swift */; };
+		8440F19E23459F8C005387AC /* profilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440F19D23459F8C005387AC /* profilePage.swift */; };
+		8440F1A02345AE11005387AC /* profilePageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440F19F2345AE11005387AC /* profilePageSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3AFEFD5A232ABA2900C026D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843316222341485800E6A66D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		843316242341487000E6A66D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8440F19D23459F8C005387AC /* profilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePage.swift; sourceTree = "<group>"; };
+		8440F19F2345AE11005387AC /* profilePageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePageSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				3AFEFD4E232ABA2800C026D1 /* AppDelegate.swift */,
 				3AFEFD50232ABA2800C026D1 /* ViewController.swift */,
 				3AFEFD52232ABA2800C026D1 /* Main.storyboard */,
+				8440F19F2345AE11005387AC /* profilePageSettings.swift */,
+				8440F19D23459F8C005387AC /* profilePage.swift */,
 				843316242341487000E6A66D /* TableViewCell.swift */,
 				843316222341485800E6A66D /* TableViewController.swift */,
 				3AFEFD55232ABA2900C026D1 /* Assets.xcassets */,
@@ -143,8 +149,10 @@
 			files = (
 				3AFEFD51232ABA2800C026D1 /* ViewController.swift in Sources */,
 				843316252341487000E6A66D /* TableViewCell.swift in Sources */,
+				8440F19E23459F8C005387AC /* profilePage.swift in Sources */,
 				843316232341485800E6A66D /* TableViewController.swift in Sources */,
 				3AFEFD4F232ABA2800C026D1 /* AppDelegate.swift in Sources */,
+				8440F1A02345AE11005387AC /* profilePageSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
