@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nF-UM-sQX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nF-UM-sQX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -94,12 +95,6 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="cF8-ho-Q8e" secondAttribute="trailing" constant="10" id="eyG-1K-hHG"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="cellLabel" destination="hQ2-Df-Dpv" id="qdH-af-XRR"/>
-                                    <outlet property="numLikes" destination="rCG-GL-pug" id="NuZ-jW-0T4"/>
-                                    <outlet property="numReplies" destination="bZ3-cx-0LE" id="e1h-ay-ulj"/>
-                                    <outlet property="postTime" destination="Ofj-oL-byr" id="zc1-ts-yNS"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
