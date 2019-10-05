@@ -15,6 +15,8 @@
 		3AFEFD59232ABA2900C026D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFEFD57232ABA2900C026D1 /* LaunchScreen.storyboard */; };
 		843316232341485800E6A66D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843316222341485800E6A66D /* TableViewController.swift */; };
 		843316252341487000E6A66D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843316242341487000E6A66D /* TableViewCell.swift */; };
+		8440F19E23459F8C005387AC /* profilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440F19D23459F8C005387AC /* profilePage.swift */; };
+		8440F1A02345AE11005387AC /* profilePageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440F19F2345AE11005387AC /* profilePageSettings.swift */; };
 		991CEAF8D1ED8BB0B3639601 /* Pods_openMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A05E7738A6A4FCA3201F8C9 /* Pods_openMic.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		4A05E7738A6A4FCA3201F8C9 /* Pods_openMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		843316222341485800E6A66D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		843316242341487000E6A66D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8440F19D23459F8C005387AC /* profilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePage.swift; sourceTree = "<group>"; };
+		8440F19F2345AE11005387AC /* profilePageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePageSettings.swift; sourceTree = "<group>"; };
 		85B34AB5C8DAB3C526B3A8FF /* Pods-openMic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openMic.debug.xcconfig"; path = "Target Support Files/Pods-openMic/Pods-openMic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,8 @@
 				3AFEFD4E232ABA2800C026D1 /* AppDelegate.swift */,
 				3AFEFD50232ABA2800C026D1 /* ViewController.swift */,
 				3AFEFD52232ABA2800C026D1 /* Main.storyboard */,
+				8440F19F2345AE11005387AC /* profilePageSettings.swift */,
+				8440F19D23459F8C005387AC /* profilePage.swift */,
 				843316242341487000E6A66D /* TableViewCell.swift */,
 				843316222341485800E6A66D /* TableViewController.swift */,
 				3AFEFD55232ABA2900C026D1 /* Assets.xcassets */,
@@ -218,8 +224,10 @@
 			files = (
 				3AFEFD51232ABA2800C026D1 /* ViewController.swift in Sources */,
 				843316252341487000E6A66D /* TableViewCell.swift in Sources */,
+				8440F19E23459F8C005387AC /* profilePage.swift in Sources */,
 				843316232341485800E6A66D /* TableViewController.swift in Sources */,
 				3AFEFD4F232ABA2800C026D1 /* AppDelegate.swift in Sources */,
+				8440F1A02345AE11005387AC /* profilePageSettings.swift in Sources */,
 				3A492734234275CF0083614A /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
